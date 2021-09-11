@@ -1,0 +1,183 @@
+:root{
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: redhat500;
+    src:url("../font/RedHatDisplay-500.ttf");
+}
+
+@font-face {
+    font-family: redhat700;
+    src:url("../font/RedHatDisplay-700.ttf");
+}
+
+@font-face {
+    font-family: redhat900;
+    src:url("../font/RedHatDisplay-900.ttf");
+}
+
+*{
+    box-sizing: border-box;
+    font-weight: normal;
+    margin:0;
+     padding:0;
+}
+
+body{
+    min-height:100vh;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-color: var(--Pale-blue);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:3rem 0;
+}
+main{
+    width:min-content;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px -20px rgb(148, 147, 147);
+    
+}
+
+    .dance-image{
+        display:block;
+        border-radius: 15px 15px 0 0;
+        
+    }
+    section{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  h1{
+      font-family: redhat900;
+      margin:2.5rem 0 1.5rem 0;
+      font-size: 1.8rem;
+      color: var(--Dark-blue);
+  }
+  p{
+      font-family: redhat500;
+      color:var(--Desaturated-blue);
+      margin:0 0 1.5rem 0;
+      width:70%;
+      line-height: 1.6;
+  }
+
+  .container-music-plan-change{
+      display:flex;
+      align-items: center;
+      width:75%;
+      padding:20px 20px 20px 0;
+      background-color: var(--Very-pale-blue);
+      border-radius: 20px;
+      
+  }
+  
+
+        .music-img{
+            display:block;
+            margin:0 15px 0 20px;
+
+        }
+
+
+        .annual-pay{
+            width:13rem;
+            text-align: left;
+        }
+                h2{
+                    font-size: 1rem;
+                }
+                h2.plan-annual{
+                    font-family:redhat700 ;
+                    color: var(--Dark-blue);
+
+                }
+
+                h2.dollars{
+                    font-family:redhat500 ;
+                    color:var(--Desaturated-blue);
+                    margin-top: 5px;
+
+                }
+
+
+
+        
+            .change > a{
+                font-family:redhat700 ;
+                transition: opacity 0.1s ease-in; 
+                color: var(--Bright-blue);
+                
+            }
+            .change > a:hover{
+                text-decoration: none;
+                opacity: 0.6;
+
+            }
+        
+
+    .payment{
+        font-family:redhat700 ;
+        background-color: var(--Bright-blue);
+        color: var(--Very-pale-blue);
+        text-decoration: none;
+        border-radius: 10px;
+        margin-top: 30px;
+        transition: all 0.2s ease-in; 
+    }
+            .movementfix{
+                width:75%;
+                display: flex;
+                align-items: center;
+                height:3rem;
+                justify-content: center;
+
+            }
+
+            .shadow{
+                box-shadow: 0 8px 25px -10px var(--Bright-blue);
+            }
+            .payment:hover{
+                opacity: 0.7;
+            }
+
+
+
+
+
+        
+    .cancel{
+        margin: 30px 0 40px 0;
+        font-family: redhat700 ;
+        
+    }
+            .cancel > a{
+                color:var(--Desaturated-blue);
+                text-decoration: none;
+                transition: all 0.2s ease-in;
+            }
+                .cancel > a:hover{
+                    color: var(--Dark-blue);
+
+                }
+
+                 
+              .attribution{
+                  position: absolute;
+                  top:0;
+                  left:0;
+                  color:black;
+             
+                }
