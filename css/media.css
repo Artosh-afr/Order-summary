@@ -3,8 +3,7 @@
 @media (max-width:500px){
     body{
         background-image: url("../images/pattern-background-mobile.svg");
-        background-size: 100% 40%;
-        margin:2rem 0;
+        margin:1rem 0;
     }
     main{
         width:90%;
